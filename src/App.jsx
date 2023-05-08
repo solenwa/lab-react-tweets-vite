@@ -34,13 +34,14 @@ const tweetsArray = [
   },
 ]
 
+const allTweets = tweetsArray.map(tweet => 
+  <div className='App'>
+    <Tweet tweet={tweet}/>
+  </div>)
+
 function App() {
   return (
-    <div className='App'>
-      <Tweet tweet={tweetsArray[0]}/>
-      <Tweet tweet={tweetsArray[1]}/>
-      <Tweet tweet={tweetsArray[2]}/>
-    </div>
+    allTweets
   )
 }
 
