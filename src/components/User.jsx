@@ -1,8 +1,8 @@
-function User({name, handle}) {
+function User({userdata}) {
     return (
     <span className="user">
-        <span className="name">{name}</span>
-        <span className="handle">{handle}</span>
+        <span className="name">{userdata.name}</span>
+        <span className="handle">{userdata.handle}</span>
       </span>
     );
 }
